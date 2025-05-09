@@ -11,7 +11,7 @@ Before you begin, ensure you have Docker installed on your system. If not, you c
 Clone this GitHub repository:
 
 ```bash
-git clone https://github.com/javad-rezaie/PIDNet_Segmentation
+git clone https://github.com/javad-rezaie/PIDNet_Segmentation.git
 cd PIDNet_Segmentation
 ```
 
@@ -31,7 +31,7 @@ Run the Jupyter notebook from the terminal, execute the `jupyter.sh` script:
 ```bash
 bash data_conversion.sh
 ```
-Follow Data_Preparation.ipynb
+
 
 ## Modifying the Paths and GPU Configuration
 
@@ -56,6 +56,29 @@ Within the container, this directory is accessible as `/data` and will appear as
 
 The local path `/mnt/SSD2/LovDA/` is mapped to `/data/` inside the container.
 
+## Analysing log results:
+Run the Jupyter notebook from the terminal, execute the `jupyter.sh` script:
+
+```bash
+bash jupyter.sh
+```
+Follow [Analyse_Logs.ipynb](./notebooks/Analyse_Logs.ipynb)
+
+![mAP](./notebooks/results.jpg)
+
+## Inference:
+Run the Jupyter notebook from the terminal, execute the `jupyter.sh` script:
+
+```bash
+bash jupyter.sh
+```
+Follow [Inference.ipynb](./notebooks/Inference.ipynb) 
+
+### Original Image:
+![Original Image](./notebooks/vis/orig/5080.png)
+
+### Inference Result:
+![Inference Results](./notebooks/vis/vis/5080.png)
 ## Tips
 Ensure that the `train.sh` and  `jupyter.sh` bash scripts has executable permissions. If not, grant execute permission by running `chmod u+x train.sh`.
 
