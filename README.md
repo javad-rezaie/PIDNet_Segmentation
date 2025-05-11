@@ -26,7 +26,7 @@ make docker-build-mmsegmentation
 
 ## Dataset Preparation
 
-Run the Jupyter notebook from the terminal, execute the `jupyter.sh` script:
+Run the Jupyter notebook from the terminal, execute the `data_conversion.sh` script:
 
 ```bash
 bash data_conversion.sh
