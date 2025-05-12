@@ -11,8 +11,8 @@ Before you begin, ensure you have Docker installed on your system. If not, you c
 Clone this GitHub repository:
 
 ```bash
-git clone https://github.com/javad-rezaie/PIDNet_Segmentation.git
-cd PIDNet_Segmentation
+git clone https://github.com/javad-rezaie/PIDNet_Semantic_Segmentation.git
+cd PIDNet_Semantic_Segmentation
 ```
 
 ## Setting Up the Docker Environment
